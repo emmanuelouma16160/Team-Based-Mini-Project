@@ -14,7 +14,7 @@ header {
     border-radius: 0 0 20px 20px;
 }
 
-.nav-links{
+.nav-links {
     background-color: #444;
     display: flex;
     justify-content: end;
@@ -32,26 +32,26 @@ header {
     border-radius: 30px;
 }
 
-.hero{
+.hero {
     display: flex;
 }
 
-.hero h1{
-    color:blue;
+.hero h1 {
+    color: blue;
     width: 200px;
 }
 
-.hero img{
+.hero img {
     width: 60%;
     height: auto;
 }
 
-.hero p{
+.hero p {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    padding: 15px 10px 15px 15px ;
+    padding: 15px 10px 15px 15px;
     width: 200px;
     height: fit-content;
-    content-visibility:  auto;
+    content-visibility: auto;
     margin: 30px 10px 10px 10px;
     word-spacing: 2px;
     font-size: larger;
@@ -62,12 +62,13 @@ header {
     color: black;
     transition: 0.5s ease-in-out;
 }
-.hero p:hover{
+
+.hero p:hover {
     transform: translateY(-10px);
 }
 
 
-aside button{
+aside button {
     background-color: #e7d747;
     color: white;
     border: none;
@@ -79,36 +80,40 @@ aside button{
     color: blueviolet;
     transition: all 0.4s ease-in-out;
 }
-aside button:hover{
+
+aside button:hover {
     background: greenyellow;
     letter-spacing: 1px;
     style: italic;
     text-decoration: none;
 }
 
-aside h1{
+aside h1 {
     animation: floatBounce 3s ease-in-out infinite;
 }
 
-aside img{
+aside img {
     width: 100%;
     height: auto;
     border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: all 0.4s ease-in-out;
 }
-aside img:hover{
+
+aside img:hover {
     transform: scale(1.03);
 }
 
-@keyframes floatBounce{
+@keyframes floatBounce {
     0% {
         transform: translateY(0);
     }
+
     50% {
         transform: translateY(-20px);
         color: rgb(71, 189, 219);
     }
+
     100% {
         transform: translateY(0);
         color: blueviolet;
@@ -116,24 +121,24 @@ aside img:hover{
 }
 
 
-.details{
+.details {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     margin: 5px;
 }
 
-.details h2{
+.details h2 {
     background-color: whitesmoke;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    padding:20px;
+    padding: 20px;
     color: blue;
-    font-size:xx-large;
+    font-size: xx-large;
     text-align: center;
     margin-bottom: 20px;
 }
 
-.details p{
+.details p {
     width: 800px;
     height: fit-content;
     word-spacing: 5px;
@@ -144,4 +149,77 @@ aside img:hover{
     border-radius: 20px;
     box-shadow: 0 4px 8px rgba(240, 234, 234, 0.993);
     transition: all 0.4s ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Contact Styles */
+.hero-contact {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: #0b0f19;
+    min-height: 650px;
+    max-height: 750px;
+    overflow: hidden;
+}
+
+.contact-container {
+    position: relative;
+    z-index: 2;
+    width: 50%;
+    padding: 0 8%;
+}
+
+.hero-contact-content h1 {
+    font-size: 3.5rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.hero-contact-content h1 span {
+    color: #a855f7;
+}
+
+.hero-contact-content p {
+    font-size: 1.1rem;
+    color: #d1d5db;
+    line-height: 1.6;
+}
+
+.contact-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.contact-image img, .hero-contact-image img {
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    object-position:  center;
 }

@@ -1,1 +1,181 @@
-<!-- to be done by Victor -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Building Project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero-contact">
+        <div class="contact-container">
+            <div class="hero-contact-content">
+                <h1>Let's <span>Talk</span></h1>
+                <p>We're always excited to hear about new ideas and potential collaborations. Reach out and let's create
+                    something amazing together.</p>
+            </div>
+        </div>
+
+        <div class="contact-image">
+            <img src="images/contact-image.png" alt="contact-image">
+        </div>
+    </section>
+
+
+
+    <!-- CONTACT SECTION -->
+    <section class="Contact-section">
+        <div class="contact-section">
+            <!-- Contact Info -->
+            <div class="main-contact-container">
+                <div class="contact-main">
+                    <h2>Get In Touch</h2>
+                    <p>We're responsive and eager to hear
+                        from you. Here are the best ways to connect with our team.</p>
+                </div>
+
+                <div class="contact-info-box">
+                    <div class="contact-info-box-icon"><i class='bx bx-envelope'></i></div>
+                    <div class="contact-info-box-text">
+                        <h4>Email</h4>
+                        <p><a href="mailto:hello@teamharmony.dev">hello@teamharmony.dev</a></p>
+                        <p>We typically respond within 24 hours</p>
+                    </div>
+                </div>
+
+                <div class="contact-info-box">
+                    <div class="contact-info-box-icon"><i class='bx bx-phone'></i></div>
+                    <div class="contact-info-box-text">
+                        <h4>Phone</h4>
+                        <p><a href="tel:+1234567890">+1 (234) 567-890</a></p>
+                        <p>Mon-Fri, 9AM-6PM PST</p>
+                    </div>
+                </div>
+
+                <div class="contact-info-box">
+                    <div class="contact-info-box-icon"><i class='bx bx-location-plus'></i></div>
+                    <div class="contact-info-box-text">
+                        <h4>Location</h4>
+                        <p>San Francisco, CA</p>
+                        <p>Based in the heart of tech innovation</p>
+                    </div>
+                </div>
+
+                <div class="response-info-box">
+                    <div class="response-info-box-icon"><i class='bx bx-time-five'></i></div>
+                    <div class="response-info-box-text">
+                        <h4>Response Time</h4>
+                        <p>Expect a response within 24 hours</p>
+                        <p>For urgent matters, call us directly</p>
+                    </div>
+                </div>
+
+                <h3 class="follow-us-title">Follow Us</h3>
+                <div class="footer-socials">
+                    <a href="#" title="GitHub"><i class='bx bxl-github'></i></a>
+                    <a href="#" title="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+                    <a href="#" title="Twitter"><i class='bx bxl-twitter'></i></a>
+                    <a href="#" title="Instagram"><i class='bx bxl-instagram'></i></a>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="contact-form-container">
+                <div class="contact-card">
+                    <h2 class="contact-heading">Send Us a Message</h2>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label class="form-label" for="name">Full Name</label>
+                            <input class="form-input" type="text" id="name" name="name" placeholder="Your name"
+                                required>
+                            <div class="form-message"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="email">Email Address</label>
+                            <input class="form-input" type="email" id="email" name="email" placeholder="your@email.com"
+                                required>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="phone">Phone Number (Optional)</label>
+                            <input class="form-input" type="tel" id="phone" name="phone" placeholder="0700223344">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="subject">Subject</label>
+                            <input class="form-input" type="text" id="subject" name="subject"
+                                placeholder="What is this about?" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="projectType">Project Type</label>
+                            <select class="form-input" id="projectType" name="projectType" required>
+                                <option value="">Select a project type...</option>
+                                <option value="web-design">Web Design</option>
+                                <option value="frontend">Frontend Development</option>
+                                <option value="backend">Backend Development</option>
+                                <option value="fullstack">Full Stack Development</option>
+                                <option value="consultation">Consultation</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="budget">Budget Range (Optional)</label>
+                            <select id="budget" name="budget">
+                                <option value="">Select a budget range...</option>
+                                <option value="5k-10k">$5,000 - $10,000</option>
+                                <option value="10k-25k">$10,000 - $25,000</option>
+                                <option value="25k-50k">$25,000 - $50,000</option>
+                                <option value="50k+">$50,000+</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message"
+                                placeholder="Tell us about your project, goals, and vision..." required></textarea>
+                            <div class="form-message"></div>
+                        </div>
+
+                        <button class="submit-btn ">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- The footer of the page -->
+    <footer>
+        <div class="quick-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+        <div class="social">
+            <a href="#"><i class="ri-facebook-fill"></i>Facebook</a>
+            <a href="#"><i class="ri-twitter-fill"></i>Twitter</a>
+            <a href="#"><i class="ri-instagram-fill"></i>Instagram</a>
+        </div>
+        <p>&copy; 2026 Team Building Project. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
