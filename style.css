@@ -1,1 +1,116 @@
 /* to be done by Griffins */
+*body {
+    background-color: #aa3d3d;
+    font-family: Arial, sans-serif;
+    /* margin: 0;
+    padding: 0; */
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 0 0 20px 20px;
+}
+
+.nav-links{
+    background-color: #444;
+    display: flex;
+    justify-content: end;
+}
+
+.nav-links a {
+    font-size: 18px;
+    color: white;
+    padding: 14px;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    background-color: #555;
+    border-radius: 30px;
+}
+
+.hero{
+    display: flex;
+}
+
+.hero h1{
+    color:blue;
+    width: 200px;
+}
+
+.hero img{
+    width: 60%;
+    height: auto;
+}
+
+.hero p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 15px 10px 15px 15px ;
+    width: 200px;
+    height: fit-content;
+    content-visibility:  auto;
+    margin: 30px 10px 10px 10px;
+    word-spacing: 2px;
+    font-size: larger;
+    font-weight: 600;
+    border-radius: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: rgb(238, 241, 241);
+    color: black;
+    transition: 0.5s ease-in-out;
+}
+.hero p:hover{
+    transform: translateY(-10px);
+}
+
+
+aside button{
+    background-color: #e7d747;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 20px;
+    font-weight: 800;
+    color: blueviolet;
+    transition: all 0.4s ease-in-out;
+}
+aside button:hover{
+    background: greenyellow;
+    letter-spacing: 1px;
+    style: italic;
+    text-decoration: none;
+}
+
+aside h1{
+    animation: floatBounce 3s ease-in-out infinite;
+}
+
+aside img{
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.4s ease-in-out;
+}
+aside img:hover{
+    transform: scale(1.03);
+}
+
+@keyframes floatBounce{
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+        color: rgb(71, 189, 219);
+    }
+    100% {
+        transform: translateY(0);
+        color: blueviolet;
+    }
+}
